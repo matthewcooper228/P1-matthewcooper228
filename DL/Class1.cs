@@ -1,4 +1,4 @@
-﻿namespace Models;
+﻿namespace DL;
 public class Class1
 {
 
