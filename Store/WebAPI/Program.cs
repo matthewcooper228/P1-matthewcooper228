@@ -1,5 +1,6 @@
 using DL;
 using BL;
+using Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,6 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IRepository>(ctx => new DBRepository(builder.Configuration.GetConnectionString("StoreDB")));
 builder.Services.AddScoped<IStoreBL, StoreBL>();
-
 
 var app = builder.Build();
 

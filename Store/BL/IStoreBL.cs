@@ -1,4 +1,5 @@
 ﻿using Models;
+using DL;
 namespace BL;
 public interface IStoreBL
 {

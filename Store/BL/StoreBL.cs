@@ -3,8 +3,8 @@ using Models;
 namespace BL;
 public class StoreBL : IStoreBL
 {
-    private readonly IStoreBL _repo;
-    public StoreBL(IStoreBL repo)
+    private readonly IRepository _repo;
+    public StoreBL(IRepository repo)
     {
         _repo = repo;
     }
